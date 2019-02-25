@@ -47,7 +47,7 @@ You can watch/download the video showing how the app finally should work: <a hre
 - Use **flex** in the css style.
 - Style with **responsiveness**. As the video shows, the pokemon list should adapt to the screen size and show three pokemons per row on large width screen size, two pokemon per row on medium width screen size and one pokemon per row on mobile width sizes. (You have a file named mixins.scss, in which you can use the existing medias in order to configure the responsiveness).
 - Use relative paths (*jsconfig.json*) while importing.
-- Use predefined styles (*font-sizes*, *mixins*, *palette* and *variables*) and mixins (*mixins*),,
+- Use predefined styles (*font-sizes*, *mixins*, *palette* and *variables*) and mixins (*mixins*).
 
 
 ## Bonus
