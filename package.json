@@ -8,29 +8,39 @@
     "url": "git@git.immfly.com:immfly/test-pokedex.git"
   },
   "scripts": {
-    "start": "webpack-dev-server --mode development",
+    "start": "npx webpack-dev-server --mode development",
     "start:docker": "webpack-dev-server --host 0.0.0.0 --public=localhost:$PORT --port 80 --hot --mode development",
     "build": "webpack --mode production",
     "js-linter": "standard",
-    "standard": "standard --fix"
+    "standard": "standard --fix",
+    "test": "NODE_ENV=test mocha test/*/**.test.js"
   },
   "devDependencies": {
     "babel-core": "^6.26.3",
     "babel-loader": "^7.1.5",
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-plugin-webpack-alias": "2.1.2",
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
+    "chai": "4.2.0",
     "copy-webpack-plugin": "^4.6.0",
     "css-loader": "^1.0.0",
     "dotenv": "^6.0.0",
+    "enzyme": "3.7.0",
+    "enzyme-adapter-react-16": "1.7.0",
     "extract-text-webpack-plugin": "^4.0.0-beta.0",
     "file-loader": "^1.1.11",
     "html-webpack-plugin": "^3.2.0",
     "identity-obj-proxy": "^3.0.0",
+    "ignore-styles": "5.0.1",
+    "jsdom": "13.2.0",
+    "jsdom-global": "3.0.2",
+    "mocha": "5.2.0",
     "node-sass": "^4.9.2",
     "postcss-flexbugs-fixes": "^4.0.0",
     "postcss-loader": "^2.1.6",
     "sass-loader": "^7.0.3",
+    "sinon": "7.1.1",
     "standard": "^11.0.1",
     "style-loader": "^0.21.0",
     "webpack": "^4.16.0",
@@ -43,7 +53,9 @@
     "npm": "^6.4.1",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
+    "react-redux": "6.0.1",
     "react-router-dom": "^4.3.1",
-    "react-spinners": "^0.3.3"
+    "react-spinners": "^0.3.3",
+    "redux": "4.0.1"
   }
 }

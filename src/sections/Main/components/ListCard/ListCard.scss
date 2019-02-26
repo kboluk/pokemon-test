@@ -1,0 +1,27 @@
+.link {
+  @include flex-card;
+  justify-content: flex-end;
+  align-items: center;
+  border-radius: $border-radius-1;
+  border: 2px solid $gray-2;
+  margin: $standard-space-3 0;
+  height: 200px;
+  flex: 1 0 100%;
+  font-size: .75em;
+  @include tablet-portrait {
+    flex: 0 0 45%;
+  }
+  @include tablet {
+    flex: 0 0 45%;
+  }
+  @include desktop {
+    flex: 0 0 30%;
+  }
+  &:hover {
+    background-color: $gray-5;
+  }
+}
+
+.caption {
+  text-transform: capitalize;
+}

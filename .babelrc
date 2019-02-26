@@ -1,4 +1,9 @@
 {
+  "env": {
+    "test": {
+      "plugins": [["webpack-alias", {"config": "webpack.config.js"}]]
+    }
+  },
   "presets": ["env", "react"],
   "plugins": ["transform-object-rest-spread"]
 }

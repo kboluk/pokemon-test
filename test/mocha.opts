@@ -1,0 +1,4 @@
+--require babel-core/register
+--require jsdom-global/register
+--require ignore-styles
+--file mocha.setup.js

@@ -1,0 +1,12 @@
+.pokedex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 0 5%;
+  max-width: $desktop-width;
+  margin: 0 auto;
+
+  @include desktop {
+    padding: 0;
+  }
+}

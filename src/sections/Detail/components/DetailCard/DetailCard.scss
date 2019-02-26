@@ -1,0 +1,54 @@
+.card {
+  @include flex-card;
+  margin: $standard-space-1 auto;
+  border: 1px solid $gray-2;
+  width: 340px;
+  padding: $standard-space-1;
+  position: relative;
+  color: $gray-2;
+}
+
+.figure {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.caption {
+  margin: $standard-space-2 0 0;
+  text-transform: capitalize;
+}
+
+.deflist {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  dt {
+    flex: 0 1 5%;
+    margin: 0 0 $standard-space-3;
+    font-size: $font-size-5;
+    font-family: Bold;
+  }
+  dd {
+    flex: 0 1 80%;
+    margin: 0 0 $standard-space-3;
+    padding-left: $standard-space-4;
+    font-size: $font-size-6;
+    &:last-of-type {
+      flex: 0 0 100%;
+    }
+  }
+}
+
+.abilities {
+  margin: 0;
+  text-transform: capitalize;
+}
+
+.link {
+  position: absolute;
+  top: $standard-space-1;
+  right: $standard-space-1;
+  color: $gray-1;
+}
